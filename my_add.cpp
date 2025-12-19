@@ -1,5 +1,5 @@
 #include "my_add.hpp"
 
-namespace exp {
-  int add(int i, int j);
+namespace examples {
+  int add(int i, int j) { return i+j;}
 }
