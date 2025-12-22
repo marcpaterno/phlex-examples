@@ -46,7 +46,7 @@ Processed layers:
 
   job
    │
-   └ event: 10
+   └ spill: 10
 
 [2025-12-22 13:17:51.760] [info] CPU time: 0.21204s  Real time: 0.26498s  CPU efficiency:  80.02%
 [2025-12-22 13:17:51.760] [info] Max. RSS: 268.848 MB
