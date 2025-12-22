@@ -7,22 +7,22 @@ This repository contains examples of the use of the [Phlex framework](https://gi
 To use the code in this repository, first install it:
 
 ```console
-$ git clone https://github.com/Framework-R-D/phlex-examples.git
+git clone https://github.com/Framework-R-D/phlex-examples.git
 ```
 
 Now create a build directory:
 ```console
-$ mkdir build-phlex-examples
-$ cd build-phlex-examples
+mkdir build-phlex-examples
+cd build-phlex-examples
 ```
 
-The repository be easily built by activating [the environment you created when installing Phlex](https://github.com/Framework-R-D/phlex/blob/main/INSTALLATION.md#creating-and-installing-the-phlex-environment):
+The repository can now be easily built by activating [the environment you created when installing Phlex](https://github.com/Framework-R-D/phlex/blob/main/INSTALLATION.md#creating-and-installing-the-phlex-environment):
 
 ```console
-$ spack env activate my-phlex-environment
-$ spack load cmake
-$ cmake ../phlex-example
-$ make -j
+spack env activate my-phlex-environment
+spack load cmake
+cmake ../phlex-example
+make -j
 ```
 
 ## Running the code
