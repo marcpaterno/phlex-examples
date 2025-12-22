@@ -2,17 +2,19 @@
   driver: {
     cpp: 'generate_layers',
     layers: {
-      event: { parent: 'job', total: 10, starting_number: 1 },
+      spill: { parent: 'job', total: 10, starting_number: 1 },
     },
   },
   sources: {
     ij_source: {
       cpp: 'ij_source',
+      layer: 'spill',
     },
   },
   modules: {
     add_cpp: {
       cpp: 'module',
+      layer: 'spill',
     },
     // Write "sum" data product to output file
     output: {

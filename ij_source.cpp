@@ -1,14 +1,15 @@
+#include "phlex/configuration.hpp"
 #include "phlex/model/data_cell_index.hpp"
 #include "phlex/source.hpp"
 
-#include <cassert>
-
 using namespace phlex;
 
-PHLEX_REGISTER_PROVIDERS(m)
+PHLEX_REGISTER_PROVIDERS(m, config)
 {
+  auto const layer = config.get<std::string>("layer");
+
   m.provide("provide_i", [](data_cell_index const& id) -> int { return id.number(); })
-    .output_product("i"_in("event"));
+    .output_product("i"_in(layer));
   m.provide("provide_j", [](data_cell_index const& id) -> int { return -id.number(); })
-    .output_product("j"_in("event"));
+    .output_product("j"_in(layer));
 }
