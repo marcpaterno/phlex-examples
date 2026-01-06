@@ -21,7 +21,7 @@ The repository can now be easily built by activating [the environment you create
 ```console
 spack env activate my-phlex-environment
 spack load cmake
-cmake ../phlex-example
+cmake ../phlex-examples
 make -j
 ```
 
