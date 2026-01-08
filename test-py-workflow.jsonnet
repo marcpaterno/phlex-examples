@@ -3,8 +3,8 @@
     cpp: 'generate_layers',
   },
   sources: {
-    ij_source: {
-      cpp: 'ij_source',
+    numbers_source: {
+      cpp: 'numbers_source',
       layer: 'job',
     },
   },

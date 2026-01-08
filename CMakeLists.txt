@@ -13,9 +13,9 @@ find_package(phlex REQUIRED)
 add_library(my_add SHARED my_add.cpp)
 
 # Register providers for data products
-add_library(ij_source MODULE ij_source.cpp)
-target_link_libraries(ij_source PRIVATE phlex::module)
+add_library(numbers_source MODULE numbers_source.cpp)
+target_link_libraries(numbers_source PRIVATE phlex::module)
 
 # Register experiment libraries with Phlex
-add_library(module MODULE module.cpp)
-target_link_libraries(module PRIVATE phlex::module my_add)
+add_library(add_and_verify MODULE add_and_verify.cpp)
+target_link_libraries(add_and_verify PRIVATE phlex::module my_add)
